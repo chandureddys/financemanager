@@ -13,6 +13,11 @@
             background: #222;
             padding: 17px 0 18px 0;
             border-top: 1px solid #000;
+            bottom:0px;
+           left:0px;
+           right:0px;
+           margin-bottom:0px;
+           position: fixed;
         }
         footer a {
             color: #999;
@@ -46,8 +51,8 @@
                 
             </ul>
             <ul class="nav navbar-nav navbar-right">
-            	<li><a href="#">Sign Up</a></li>
-                <li><a href="#">Sign In</a></li>
+            	
+                <li><a href="login.php">Sign In</a></li>
             </ul>
         </div>
     </nav>
