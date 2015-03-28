@@ -20,5 +20,19 @@
  
      return $result;
     }
+    public function signupinsert($tablename,$columnname,$where)
+    {
+    	$mysqli=$this->connect();
+    	$query=$mysqli->query("insert into $tablename($columnname) values ($where)");
+    	if($query)
+    	{
+    		$msg="success";
+    	}
+    	else
+    	{
+    		$msg="fail";
+    	}
+    	return $msg;
+    }
 }
  ?>
